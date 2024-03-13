@@ -16,13 +16,14 @@ void main() {
   });
 
   const testWeatherDetail = WeatherEntity(
-      cityName: 'Surat',
-      description: 'Few Clouds',
-      main: 'Clouds',
-      iconCode: '02d',
-      temperature: 302.288,
-      humidity: 70,
-      pressure: 1009);
+    cityName: 'Surat',
+    description: 'Few Clouds',
+    main: 'Clouds',
+    iconCode: '02d',
+    temperature: 302.288,
+    humidity: 70,
+    pressure: 1009,
+  );
 
   const testCityName = 'Surat';
 
