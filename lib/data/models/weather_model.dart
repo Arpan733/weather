@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import 'package:weather_tdd/domain/entities/weather.dart';
 
 class WeatherModel extends Equatable {
   final String cityName;
@@ -56,4 +57,14 @@ class WeatherModel extends Equatable {
         ],
         'name': cityName,
       };
+
+  WeatherEntity toEntity() => WeatherEntity(
+        cityName: cityName,
+        description: description,
+        main: main,
+        iconCode: iconCode,
+        temperature: temperature,
+        humidity: humidity,
+        pressure: pressure,
+      );
 }
